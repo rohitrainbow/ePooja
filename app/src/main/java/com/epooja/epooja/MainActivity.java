@@ -14,8 +14,6 @@ import com.facebook.FacebookException;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
-import static java.lang.String.*;
-
 public class MainActivity extends AppCompatActivity {
 
     private EditText name;
@@ -24,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private Button loginButton;
     private LoginButton fbLoginButton;
     private CallbackManager callbackManager;
-    private int counter = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.btnLogin);
         fbLoginButton=findViewById(R.id.btnFacebookLogin);
         callbackManager=CallbackManager.Factory.create();
-        info.setText(format("%s%d", getText(R.string.atmpt_rem), counter));
 
 
         fbLoginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
@@ -74,11 +70,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         } else {
-            counter--;
-            if (counter == 0) {
-                loginButton.setEnabled(false);
-            }
-            info.setText(format("%s%d", getText(R.string.atmpt_rem), counter));
+            info.setText(getText(R.string.incor_cred));
         }
     }
 
