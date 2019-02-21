@@ -4,4 +4,5 @@
     <string name="home_greeting">Welcome to Home</string>
     <string name="login"> Login</string>
     <string name="password"> Password</string>
+    <string name="facebook_app_id"> 340676459883362</string>
 </resources>
