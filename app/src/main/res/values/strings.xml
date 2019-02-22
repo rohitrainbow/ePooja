@@ -6,5 +6,13 @@
     <string name="password">   Password</string>
     <string name="facebook_app_id"> 340676459883362</string>
     <string name="incor_cred">Incorrect Credentials</string>
+    <string name="player1">Player1 :</string>
+    <string name="player2">Player2 :</string>
+    <string name="reset">Reset</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="player1wins">Player 1 has won!!!</string>
+    <string name="player2wins">Player 2 has won!!!</string>
+    <string name="draw">Draw!!!</string>
 
 </resources>
